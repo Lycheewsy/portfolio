@@ -936,6 +936,42 @@ img { max-width:100%; height:auto; }
 }
 </style>
 
+
+<style>
+/* v22 mobile: disable floating/parallax behavior on homepage skill cards */
+@media (max-width:767px){
+  .hero-right,
+  .hero-right [data-parallax],
+  .hero-right .quick-card,
+  .hero-skill-card{
+    transform:none !important;
+    translate:none !important;
+    animation:none !important;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    z-index:1 !important;
+    will-change:auto !important;
+  }
+
+  .hero-right{
+    overflow:visible !important;
+  }
+
+  .hero{
+    overflow:visible !important;
+  }
+
+  #experience{
+    position:relative !important;
+    z-index:2 !important;
+    background:transparent !important;
+  }
+}
+</style>
+
 </head>
 <body>
   <div class="nav-wrap">
